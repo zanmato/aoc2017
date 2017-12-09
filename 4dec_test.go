@@ -6,7 +6,7 @@ import (
 )
 
 func TestCheckPassphrases(t *testing.T) {
-	inp, err := ioutil.ReadFile("4dec.txt")
+	inp, err := ioutil.ReadFile("input/4dec.txt")
 	if err != nil {
 		t.Error(err)
 	}
@@ -31,7 +31,7 @@ func BenchmarkCheckPassphrases(b *testing.B) {
 }
 
 func TestCheckAnagramPassphrases(t *testing.T) {
-	inp, err := ioutil.ReadFile("4dec.txt")
+	inp, err := ioutil.ReadFile("input/4dec.txt")
 	if err != nil {
 		t.Error(err)
 	}

@@ -6,7 +6,7 @@ import (
 )
 
 func TestGetLargestValueInRegister(t *testing.T) {
-	inp, err := ioutil.ReadFile("8dec.txt")
+	inp, err := ioutil.ReadFile("input/8dec.txt")
 
 	if err != nil {
 		t.Error(err)
@@ -30,7 +30,7 @@ func TestGetLargestValueInRegister(t *testing.T) {
 }
 
 func BenchmarkGetLargestValueInRegister(b *testing.B) {
-	inp, err := ioutil.ReadFile("8dec.txt")
+	inp, err := ioutil.ReadFile("input/8dec.txt")
 	if err != nil {
 		b.Error(err)
 	}
@@ -41,7 +41,7 @@ func BenchmarkGetLargestValueInRegister(b *testing.B) {
 }
 
 func TestGetLargestValueInRegisterPartTwo(t *testing.T) {
-	inp, err := ioutil.ReadFile("8dec.txt")
+	inp, err := ioutil.ReadFile("input/8dec.txt")
 	if err != nil {
 		t.Error(err)
 	}

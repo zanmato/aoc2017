@@ -19,7 +19,7 @@ func inputToIntArray(i string, t testing.TB) []int {
 }
 
 func TestCalculateInstructionSteps(t *testing.T) {
-	inp, err := ioutil.ReadFile("5dec.txt")
+	inp, err := ioutil.ReadFile("input/5dec.txt")
 	if err != nil {
 		t.Error(err)
 	}
@@ -45,7 +45,7 @@ func BenchmarkCalculateInstructionSteps(b *testing.B) {
 }
 
 func TestCalculateInstructionStepsPartTwo(t *testing.T) {
-	inp, err := ioutil.ReadFile("5dec.txt")
+	inp, err := ioutil.ReadFile("input/5dec.txt")
 	if err != nil {
 		t.Error(err)
 	}

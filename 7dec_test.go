@@ -6,7 +6,7 @@ import (
 )
 
 func TestGetRootNode(t *testing.T) {
-	inp, err := ioutil.ReadFile("7dec.txt")
+	inp, err := ioutil.ReadFile("input/7dec.txt")
 	if err != nil {
 		t.Error(err)
 	}
@@ -18,7 +18,7 @@ func TestGetRootNode(t *testing.T) {
 }
 
 func BenchmarkGetRootNode(b *testing.B) {
-	inp, err := ioutil.ReadFile("7dec.txt")
+	inp, err := ioutil.ReadFile("input/7dec.txt")
 	if err != nil {
 		b.Error(err)
 	}
@@ -29,7 +29,7 @@ func BenchmarkGetRootNode(b *testing.B) {
 }
 
 func TestGetNewWeight(t *testing.T) {
-	inp, err := ioutil.ReadFile("7dec.txt")
+	inp, err := ioutil.ReadFile("input/7dec.txt")
 	if err != nil {
 		t.Error(err)
 	}
@@ -41,7 +41,7 @@ func TestGetNewWeight(t *testing.T) {
 }
 
 func BenchmarkGetNewWeight(b *testing.B) {
-	inp, err := ioutil.ReadFile("7dec.txt")
+	inp, err := ioutil.ReadFile("input/7dec.txt")
 	if err != nil {
 		b.Error(err)
 	}
